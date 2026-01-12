@@ -8,5 +8,6 @@ router.use("/library", require("./library.route"));
 router.use("/reviews", require("./review.route"));
 router.use("/recommendations", require("./recommendation.route"));
 router.use("/dashboard", require("./dashboard.route"));
+router.use("/activity", require("./activity.route"));
 
 module.exports = router;
