@@ -7,5 +7,6 @@ router.use("/genres", require("./genre.route"));
 router.use("/library", require("./library.route"));
 router.use("/reviews", require("./review.route"));
 router.use("/recommendations", require("./recommendation.route"));
+router.use("/dashboard", require("./dashboard.route"));
 
 module.exports = router;
