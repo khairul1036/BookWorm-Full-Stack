@@ -8,13 +8,13 @@ const app = express();
 app.use(cors({ origin: true, credentials: true }));
 app.use(express.json());
 
-// app.use("/api", require("./routes"));
+app.use("/api", require("./routes"));
 
 app.get("/", (req, res) => {
   res.send("Bookworm server running........");
 });
 
-// app.use(require("./middleware/error.middleware"));
+app.use(require("./middleware/error.middleware"));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>
