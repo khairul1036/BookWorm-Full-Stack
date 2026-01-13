@@ -21,7 +21,7 @@ export default function RegisterPage() {
     }
 
     return (
-        <div className="relative min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100">
+        <div className="relative min-h-screen bg-linear-to-br from-amber-50 via-orange-50 to-amber-100">
             {/* Decorative background blobs */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-40 -right-40 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl" />
@@ -33,7 +33,7 @@ export default function RegisterPage() {
                     {/* Header */}
                     <div className="text-center">
                         <div className="inline-block relative mb-6">
-                            <div className="absolute inset-0 bg-gradient-to-r from-amber-400/30 to-orange-400/30 blur-xl rounded-full" />
+                            <div className="absolute inset-0 bg-linear-to-r from-amber-400/30 to-orange-400/30 blur-xl rounded-full" />
                             <div className="relative bg-white p-5 rounded-2xl shadow-xl">
                                 <BookOpen className="h-14 w-14 text-amber-700" strokeWidth={1.6} />
                             </div>
@@ -168,7 +168,7 @@ export default function RegisterPage() {
                             {/* Submit Button */}
                             <button
                                 type="submit"
-                                className="mt-6 w-full py-3.5 px-6 bg-gradient-to-r from-amber-700 to-amber-800 hover:from-amber-800 hover:to-amber-900 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.015] flex items-center justify-center gap-2 group"
+                                className="mt-6 w-full py-3.5 px-6 bg-linear-to-r from-amber-700 to-amber-800 hover:from-amber-800 hover:to-amber-900 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.015] flex items-center justify-center gap-2 group"
                             >
                                 Create Account
                                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
