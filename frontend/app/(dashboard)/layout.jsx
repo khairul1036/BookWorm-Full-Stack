@@ -1,0 +1,25 @@
+"use client";
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+
+export default function DashboardLayout({ children }) {
+    const router = useRouter();
+
+    useEffect(() => {
+        const token = localStorage.getItem("token");
+        if (!token) {
+            router.push("/login");
+        }
+    }, [router]);
+
+    return (
+        <div>
+            <header style={{ padding: "1rem", background: "#111", color: "#fff" }}>
+                Dashboard
+            </header>
+
+            <main className="container">{children}</main>
+        </div>
+    );
+}
